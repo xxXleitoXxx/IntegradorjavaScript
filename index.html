@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IntegradorJsNavartaLeonel</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-buscador">
+      <input id="header-buscador-input" class="header-buscador-input" placeholder="Ingrese un elemento" type="text">
+      <button id="header-buscador-boton" class="header-buscador-boton">Buscar
+        <span><img class="header-buscador-boton-img" src="/search.png" alt="" width="17px"></span>
+      </button>
+    </div>
+    <button id="header-agregar" class="header-agregar">Agregar elemento
+      <span><img class="header-agregar-img" src="/add.png" alt="" width="17px"></span>
+    </button>
+  </header>
+
+  <!-- ======= MAIN ====== -->
+
+  <div class="main">
+    <div class="categorias">
+      <div class="categorias-title">
+        <h2>Categorias</h2>
+        <img class="categorias-title-img" src="/sort.png" width="28px" alt=""></span>
+      </div>
+      <div id="categorias-lista">
+        <ul id="categorias-lista-ul" />
+      </div>
+    </div>
+    <div id="elementos" class="elementos">
+
+    </div>
+
+
+
+
+    <div id="popup-container" class="popup-container">
+      <div class="popup">
+        <h1 class="popup-h1">Agregar o modificar un producto</h1>
+        <div class="popup-form">
+          <input id="inputnombre" type="text" placeholder="Ingrese un nombre">
+          <input id="inputimg" type="text" placeholder="Ingrese una imagen">
+          <input id="inputprecio" type="number" placeholder="Indique el precio">
+          <select id="inputselect">
+            <option>Seleccione una opción</option>
+            <option>Hamburguesa</option>
+            <option>Gaseosa</option>
+            <option>Papas</option>
+          </select>
+        </div>
+        <div class="popup-botones">
+          <button id="botoncancelar" class="popup-boton botoncancelar">Cancelar</button>
+          <button id="botonaceptar" class="popup-boton botonaceptar">Aceptar</button>
+          <button id="botoneliminar" class="popup-boton botoneliminar">Eliminar</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
